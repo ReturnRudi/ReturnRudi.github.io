@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "ReturnRudi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/returnrudi.png"
   bio              : "ReturnRudi의 블로그"
   location         : "South Korea"
   email            : 
@@ -267,6 +267,10 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true                       # Table Of Contents 즉 포스팅의 목차 표시 여부
+      toc_sticky: true                # TOC가 스크롤에 따라 같이 움직임 여부
+      toc_label: 목차                 # TOC 이름 지정
+      toc_icon: "fa-solid fa-bars"   # TOC 아이콘 지정
 
 
 date_format: "%Y년 %m월 %d일"
