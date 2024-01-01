@@ -107,15 +107,12 @@ author:
   name             : "ReturnRudi"
   avatar           : "/images/returnrudi.png"
   bio              : "ReturnRudi의 블로그"
-  location         : "South Korea"
+  location         : 
   email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:qnvr31p@naver.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://ReturnRudi.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ReturnRudi"
@@ -273,6 +270,7 @@ defaults:
       toc_sticky: true                # TOC가 스크롤에 따라 같이 움직임 여부
       toc_label: 목차                 # TOC 이름 지정
       toc_icon: "fa-solid fa-bars"   # TOC 아이콘 지정
+      sidebar_main: true
 
 
 date_format: "%Y년 %m월 %d일"
