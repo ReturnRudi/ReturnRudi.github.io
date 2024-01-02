@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "ReturnRudi"
-  avatar           : "/images/returnrudi.png"
-  bio              : "ReturnRudi의 블로그"
+  avatar           : "/images/logo.png"
+  bio              : "나를 위한 기록 블로그"
   location         : 
   email            : 
   links:
