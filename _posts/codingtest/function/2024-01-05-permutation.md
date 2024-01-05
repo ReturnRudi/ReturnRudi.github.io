@@ -1,6 +1,6 @@
 ---
-title:  "순열 next_permutation(), prev_permutaion()"           # 포스팅 이름
-excerpt: "순열 함수 next_permutation(), prev_permutaion()"
+title:  "순열 함수 next_permutation(), prev_permutaion()"           # 포스팅 이름
+excerpt: "순열 함수 next_permutation(), prev_permutaion() 및 재귀함수 구현"
 typora-root-url: ../            # typora에서 이미지 사용시 images에 자동 저장
 categories: function              # 카테고리 지정
 tag: [cpp]                     # tag: [python, C++] 여러 개의 tag 추가 방식
