@@ -9,7 +9,7 @@ use_math: true                  # mathjax LaTeX 수식 표현 적용
 
 # <span style = 'color: #008000'>순열</span>
 순열이란 순서가 정해진 임의의 집합을 다른 순서로 섞는 연산을 말한다.  
-주로 n개의 숫자 중에서 r개를 뽑아 나열하는 경우에 사용한다.
+n개 중에서 r개를 뽑아 나열하는 경우에 사용한다.
 
 경우의 수를 구하는 공식은 아래와 같다.
 
@@ -112,18 +112,18 @@ using namespace std;
 int a[3] = { 1, 2, 3 };
 int n = 3, r = 3;
 
-void permutation(int n, int r, int depth) {
-    if (r == depth) {
+void permutation(int n, int r, int position) {
+    if (r == position) {
         for (int i = 0; i < r; i++) {
             cout << a[i] << " ";
         }
         cout << "\n";
         return;
     }
-    for (int i = depth; i < n; i++) {
-        swap(a[i], a[depth]);
-        permutation(n, r, depth + 1);
-        swap(a[i], a[depth]);
+    for (int i = position; i < n; i++) {
+        swap(a[i], a[position]);
+        permutation(n, r, position + 1);
+        swap(a[i], a[position]);
     }
     return;
 }
@@ -163,40 +163,40 @@ int main() {
 #include <bits/stdc++.h>
 using namespace std;
 int a[3] = { 100, 200, 300 };
-int n = 3, r = 3;
+int n = 3, r = 3; //n은 뽑을 수 있는 요소의 개수  //총 뽑을(고정할) 개수
 
-void st(int depth) {
-	for (int i = 0; i < depth; i++)
+void st(int position) {
+	for (int i = 0; i < position; i++)
 		cout << "  ";
 
-	if (depth == 0) {
+	if (position == 0) {
 		cout << "- [고정된 위치 없음] ";
 	}
 	else {
-		cout << "- [" << depth << "번째까지 고정] ";
+		cout << "- [" << position << "번째까지 고정] ";
 	}
 }
 
-void makePermutation(int n, int r, int depth) {
-	if (r == depth) {
-		st(depth);
-		cout <<  depth + 1 << "번째는 없으므로 출력 후 리턴한다.\n";
+void makePermutation(int n, int r, int position) {  //position은 현재 고정할 위치
+	if (r == position) {  //position은 0부터 시작이므로 r == position이라는 것은 이미 r만큼 고정되었다는 의미 -> 리턴
+		st(position);
+		cout << position + 1 << "번째는 없으므로 출력 후 리턴한다.\n";
 		for (int i = 0; i < r; i++) {
 			cout << a[i] << " ";
 		}
 		cout << "\n";
 		return;
 	}
-	st(depth);
-	cout <<  depth + 1 << "번째부터 " << n << "번째까지 고정 시작\n";
-	for (int i = depth; i < n; i++) {
-		st(depth);
-		cout <<  depth + 1 << "번째와 " << i + 1 << "번째를 바꾸고 "<< depth + 1 << "번째에 " << a[depth] << "를 고정한다\n";
-		swap(a[i], a[depth]);
-		makePermutation(n, r, depth + 1);
-		st(depth);
-		cout <<  i + 1 << "번째와 " << depth + 1 << "번째를 다시 바꾸고 "<< depth + 1 << "번째에 고정을 푼다\n";
-		swap(a[i], a[depth]);
+	st(position);
+	cout << position + 1 << "번째부터 " << n << "번째까지 고정 시작\n";
+	for (int i = position; i < n; i++) {
+		st(position);
+		cout << position + 1 << "번째와 " << i + 1 << "번째를 바꾸고 " << position + 1 << "번째에 " << a[position] << "를 고정한다\n";
+		swap(a[i], a[position]);
+		makePermutation(n, r, position + 1);
+		st(position);
+		cout << i + 1 << "번째와 " << position + 1 << "번째를 다시 바꾸고 " << position + 1 << "번째에 고정을 푼다\n";
+		swap(a[i], a[position]);
 	}
 	return;
 }
