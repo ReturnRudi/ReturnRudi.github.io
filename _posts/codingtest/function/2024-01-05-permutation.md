@@ -17,17 +17,19 @@ use_math: true                  # mathjax LaTeX 수식 표현 적용
 
 ## <span style = 'color: #008000'>next_permutation(), prev_permutation()</span>
 
-C++에서는 순열을 진행시켜주는 next_permutation(), prev_permutation() 함수가 존재한다.
+C++에서는 순열을 수행하는 next_permutation(), prev_permutation() 함수가 존재한다.
 
 ```c++
 bool next_permutation (BidirectionalIterator first, BidirectionalIterator last);
 bool prev_permutation (BidirectionalIterator first, BidirectionalIterator last);
 ```
 
-**next_permutation()**: **오름차순**의 배열을 기반으로 순열을 생성해주는 함수  
-**prev_permutation()**: **내림차순**의 배열을 기반으로 순열을 생성해주는 함수
+**next_permutation()**: **오름차순**의 배열을 기반으로 순열을 수행하는 함수  
+**prev_permutation()**: **내림차순**의 배열을 기반으로 순열을 수행하는 함수
 
-두 함수는 가능한 모든 순열 조합이 나올 때까지 true를 반환하고 마지막 조합 때 false를 반환한다.
+[first, last) 범위의 요소들로 순열을 진행한다.
+
+두 함수는 다음 순서가 존재하면 true를 반환하고 다음 순서가 없다면 false를 반환한다.  
 따라서 while문을 이용해서 순열을 진행할 수 있다.
 
 ### <span style = 'color: #008000'>코드 구현</span>
