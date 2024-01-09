@@ -7,6 +7,7 @@ tag: [cpp]                     # tag: [python, C++] 여러 개의 tag 추가 방
 use_math: true                  # mathjax LaTeX 수식 표현 적용
 ---
 
+<br>
 # <span style = 'color: #008000'>순열</span>
 순열이란 순서가 정해진 임의의 집합을 다른 순서로 섞는 연산을 말한다.  
 n개 중에서 r개를 뽑아 나열하는 경우에 사용한다.
@@ -15,7 +16,7 @@ n개 중에서 r개를 뽑아 나열하는 경우에 사용한다.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$_nP_r = \frac{n!}{(n - r)!}$
 
-## <span style = 'color: #008000'>next_permutation(), prev_permutation()</span>
+## <span style = 'color: #008000'>🔎 next_permutation(), prev_permutation()</span>
 
 C++에서는 순열을 수행하는 next_permutation(), prev_permutation() 함수가 존재한다.
 
@@ -86,7 +87,7 @@ prev_permutation
 1 2 3
 ```
 
-## <span style = 'color: #008000'>재귀를 이용한 순열</span>
+## <span style = 'color: #008000'>🔎 재귀를 이용한 순열</span>
 
 next_permutation(), prev_permutation() 함수를 이용하지 않고 재귀 함수로도 구현이 가능하다.
 
