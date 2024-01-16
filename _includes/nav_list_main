@@ -32,8 +32,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "ct_etc" %}
-                        <li><a href="/categories/ct_etc" class="">기타 ({{category[1].size}})</a></li>
+                    {% if category[0] == "strategy" %}
+                        <li><a href="/categories/strategy" class="">풀이 전략 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

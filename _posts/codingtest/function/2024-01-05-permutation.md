@@ -1,5 +1,5 @@
 ---
-title:  "순열 함수 next_permutation(), prev_permutation()"           # 포스팅 이름
+title:  "순열 함수 next_permutation(), prev_permutation() 및 재귀함수 구현"           # 포스팅 이름
 excerpt: "순열 함수 next_permutation(), prev_permutation() 및 재귀함수 구현"
 typora-root-url: ../            # typora에서 이미지 사용시 images에 자동 저장
 categories: function              # 카테고리 지정
