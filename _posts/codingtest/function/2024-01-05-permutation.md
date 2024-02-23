@@ -14,7 +14,7 @@ n개 중에서 r개를 뽑아 나열하는 경우에 사용한다.
 
 경우의 수를 구하는 공식은 아래와 같다.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$_nP_r = \frac{n!}{(n - r)!}$
+　　　$_nP_r = \frac{n!}{(n - r)!}$
 
 ## <span style = 'color: #008000'>🔎 next_permutation(), prev_permutation()</span>
 
